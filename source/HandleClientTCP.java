@@ -12,7 +12,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
 
-public class Handle_Client_TCP 
+public class HandleClientTCP 
 {
   // Variable declarations
   private Socket socket = null;
