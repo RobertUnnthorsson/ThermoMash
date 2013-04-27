@@ -1,20 +1,20 @@
 /****************************************************************************************
- * Title      :    Temperature Server
+ * Title      :      Temperature Server
  * Developers :  	Bogdan Ioan Sorlea - s121075@student.dtu.dk, 
  * 					Robert Unnthorsson-s121049@student.dtu.dk
  * Purpose    :  	
  * Revision   : 	1.0    
  * Description:	
  ****************************************************************************************/
-import tcp.server.comm.Handle_Server_TCP;		// The communication handler
+import tcp.server.comm.HandleServerTCP;		// The communication handler
 
 public class Server 
 {
     public static void main(String args[]) 
     {
     	/* Create the Handle Connection object*/
-    	Handle_Server_TCP connection = 
-    			new Handle_Server_TCP();  
+    	HandleServerTCP connection = 
+    			new HandleServerTCP();  
     	connection.openSocket(5050);			// Open socket 5050 for communications.
     	
     	while (true) 							// infinite loop - loops once for each client
